@@ -5,5 +5,5 @@ export const formatAmountInCurrency = (amount, currency) => {
     currency,
   });
 
-  return formatter.format(amount);
+  return formatter.format(amount).replace(/\s+/, ' ');
 };
